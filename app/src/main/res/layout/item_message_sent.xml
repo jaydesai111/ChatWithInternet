@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="messageSent"
+            type="com.jay.chatwithinternet.data.SearchResponse" />
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="80dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_rectangle_green">
+
+            <TextView
+                android:id="@+id/text_message_body"
+                android:text="@{messageSent.text}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+
+                android:textColor="#ffffff"
+                android:layout_marginRight="8dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
